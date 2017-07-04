@@ -81,7 +81,7 @@ for submission in subreddit.top('day'):
 
         new_link = True # a new link is found
 
-#    time.sleep(2) # sleep two seconds as a courtesy to reddit servers         
+    time.sleep(2) # sleep two seconds as a courtesy to reddit servers         
 
 if new_link: # if a new link was found when script ran, open up link file to append the new links to it.
     
