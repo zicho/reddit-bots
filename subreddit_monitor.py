@@ -73,8 +73,6 @@ for submission in subreddit.top('day'):
 
         message = "**{}**\n  \n URL: {}\n \n View on reddit: {}\n".format(submission.title, submission.url, submission.permalink)
 
-        print message
-
         message_list.append(message + "\n")
 
         new_link_list.append(link)
