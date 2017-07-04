@@ -71,7 +71,9 @@ for submission in subreddit.top('day'):
    
     if submission.score >= score_limit and link not in link_list:
 
-        message = "**" + submission.title + "**\n" + "  \n" + "URL: " + submission.url + " \n" + " \n" + "View on reddit: " + submission.permalink + " \n"
+        message = "**{}**\n  \n URL: {}\n \n View on reddit: {}\n".format(submission.title, submission.url, submission.permalink)
+
+        print message
 
         message_list.append(message + "\n")
 
@@ -79,7 +81,7 @@ for submission in subreddit.top('day'):
 
         new_link = True # a new link is found
 
-    time.sleep(2) # sleep two seconds as a courtesy to reddit servers         
+#    time.sleep(2) # sleep two seconds as a courtesy to reddit servers         
 
 if new_link: # if a new link was found when script ran, open up link file to append the new links to it.
     
