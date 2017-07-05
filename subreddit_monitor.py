@@ -25,6 +25,7 @@ try:
 except IOError:
     
     print "Link list not found! Creating..."
+
     link_list_file = open('link_list', 'w+')
 
     link_list_file.close ()
@@ -33,7 +34,6 @@ except IOError:
 
     with open('link_list', 'r') as link_list_file:
         link_list = [line.strip() for line in link_list_file]
-
 
 # close file when it has been read
 
@@ -94,7 +94,6 @@ if new_link: # if a new link was found when script ran, open up link file to app
     for link in new_link_list:
 
         link_list_file.write(link + "\n")
-
 
 link_list_file.close()
 
