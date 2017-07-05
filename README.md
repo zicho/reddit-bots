@@ -1,3 +1,7 @@
+
+THE FOLLOWING CODE IS A SCRIPT WHICH CHECKS A SUBREDDITS LATEST POSTS FOR A CERTAIN AMOUNT OF VOTES
+IF A POST HAS GATHERED X MANY UPVOTES, A PM IS SENT TO A USER WITH LINKS TO SAID POSTS
+
 coded by /u/zicho, use responsibly
 
 script can easily be modified to fit several subreddits
